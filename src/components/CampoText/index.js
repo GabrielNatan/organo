@@ -1,9 +1,9 @@
 import "./campoTexto.css"
-function CampoTexto(){
+function CampoTexto({label,placeholder}){
     return(
         <div className="campo-texto">
-            <label>Name</label>
-            <input placeholder="Digite o seu nome"/>
+            <label>{label}</label>
+            <input placeholder={placeholder}/>
         </div>
     )
 }
