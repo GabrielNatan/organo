@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario/Formulario";
 import Rodape from "./components/Rodape/Rodape";
@@ -20,7 +20,6 @@ function App() {
     setJogadores([...jogadores,novoJogador])
   }
 
-  useEffect(()=>{console.log(jogadores)},[jogadores])
   return (
     <div className="App">
      <Banner/>
