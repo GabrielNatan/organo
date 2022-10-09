@@ -1,14 +1,14 @@
 import "./jogador.css"
 
-function Jogador(){
+function Jogador({cargo,nome,image}){
         return(
             <div className='colaborador'>
                 <div className='cabecalho'>
-                    <img src="https://github.com/gabrielnatan.png" alt="avatar"/>
+                    <img src={image} alt={nome}/>
                 </div>
                 <div className='rodape'>
-                    <h1>Gabriel Natan</h1>
-                    <h5>Desenvolvedor</h5>
+                    <h1>{nome}</h1>
+                    <h5>{cargo}</h5>
                 </div>
             </div>
         )

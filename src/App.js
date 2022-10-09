@@ -5,6 +5,7 @@ import Time from "./components/Time/Time";
 
 function App() {
   const [jogadores,setJogadores] = useState([])
+  
   const times = [
       {nome:'Programação',primaryColor:"#D9F7E9",secondaryColor:"#57C278"},
       {nome:'Front-End',primaryColor:"#E8F8FF",secondaryColor:"#82CFFA"},
@@ -29,6 +30,7 @@ function App() {
           <Time titulo={el.nome} 
                 primaryColor={el.primaryColor} 
                 secondaryColor={el.secondaryColor}
+                jogadores={jogadores.filter(jogador=>jogador.time === el.nome)}
           />
         </Fragment>
       )

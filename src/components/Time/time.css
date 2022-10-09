@@ -10,3 +10,11 @@
     display: inline-block;
     padding-bottom: 8px;
 }
+
+.time .colaboradoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
