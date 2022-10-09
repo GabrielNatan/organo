@@ -4,21 +4,12 @@ import CampoTexto from "../CampoText"
 import ListaSuspensa from "../ListaSuspensa/ListaSuspensa"
 import Botao from "../Botao/Botao"
 
-const Formulario = ({sendForm})=>{
+const Formulario = ({sendForm, data})=>{
     const [nome,setNome] = useState("")
     const [cargo,setCargo] = useState("")
     const [image,setImage] = useState("")
     const [time,setTime] = useState("")
 
-    let data = [
-        "Goleiro",
-        "Lateral esquerdo",
-        "Lateral direito",
-        "Zagueiro",
-        "Volante",
-        "Meia",
-        "Atacante"
-    ]
 
     const aoSalvar = (evento) => { 
         evento.preventDefault()

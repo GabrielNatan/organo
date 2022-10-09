@@ -1,9 +1,9 @@
 import "./time.css"
 
-function Time({titulo}){
+function Time({titulo,primaryColor,secondaryColor}){
     return(
-        <section key={titulo} className="time">
-            <h3>{titulo}</h3>
+        <section style={{background:primaryColor}} key={titulo} className="time">
+            <h3 style={{borderColor:secondaryColor}}>{titulo}</h3>
         </section>
     )
 }
