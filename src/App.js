@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario/Formulario";
+import Rodape from "./components/Rodape/Rodape";
 import Time from "./components/Time/Time";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         </Fragment>
       )
     })}
+    <Rodape/>
     </div>
   );
 }

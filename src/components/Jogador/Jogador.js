@@ -1,9 +1,9 @@
 import "./jogador.css"
 
-function Jogador({cargo,nome,image}){
+function Jogador({cargo,nome,image,corDeFundo}){
         return(
             <div className='colaborador'>
-                <div className='cabecalho'>
+                <div style={{background:corDeFundo}} className='cabecalho'>
                     <img src={image} alt={nome}/>
                 </div>
                 <div className='rodape'>

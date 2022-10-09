@@ -19,6 +19,10 @@ const Formulario = ({sendForm, data})=>{
             cargo,
             time
         })
+        setNome("")
+        setCargo("")
+        setImage("")
+        setTime("")
     }
     return(
         <section className="formulario">
