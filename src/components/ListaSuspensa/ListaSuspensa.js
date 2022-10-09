@@ -1,10 +1,10 @@
 import "./listaSuspensa.css"
 
-function ListaSuspensa({label,data}){
+function ListaSuspensa({label,data,obrigatorio}){
     return(
         <div className="lista-suspensa">
             <label>{label}</label>
-            <select>
+            <select required={obrigatorio}>
                 {data.map(each=>{
                     return(
                         <option key={each}>

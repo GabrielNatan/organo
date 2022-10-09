@@ -1,9 +1,14 @@
 import "./campoTexto.css"
-function CampoTexto({label,placeholder}){
+function CampoTexto({label,placeholder,obrigatorio}){
     return(
         <div className="campo-texto">
-            <label>{label}</label>
-            <input placeholder={placeholder}/>
+            <label>
+                {label}
+            </label>
+            <input 
+                required={obrigatorio} 
+                placeholder={placeholder}
+            />
         </div>
     )
 }
