@@ -1,0 +1,115 @@
+.selecao{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background: rgb(47, 104, 209);
+    color: white;
+}
+
+.selecao .container-selecao{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+
+.selecao .container-selecao div{
+    flex:1;
+}
+
+.selecao .container-selecao div:last-child{
+    display: flex;
+    flex-direction: column;
+}
+.selecao .container-selecao div:first-child{
+    
+}
+
+
+.cont{
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-end;
+    position: relative;
+}
+
+.jogador{
+    width: 22px;
+    height: 22px;
+    background-color: yellow;
+    border: 3px solid green;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.jogador.goleiro{
+    left: 187px;
+    top: 485px;
+}
+
+.jogador.zagueiro.um{
+    left: 240px;
+    top: 400px; 
+}
+
+
+.jogador.zagueiro.dois{
+    left: 130px;
+    top: 400px; 
+}
+
+
+.jogador.lateral.es{
+    left: 65px;
+    top: 350px; 
+}
+
+
+.jogador.lateral.dr{
+    left: 310px;
+    top: 350px; 
+}
+
+
+.jogador.meia.um{
+    left: 210px;
+    top: 290px; 
+}
+
+
+.jogador.meia.dois{
+    left: 150px;
+    top: 250px; 
+}
+
+.jogador.meia.tres{
+    left: 210px;
+    top: 200px; 
+}
+
+
+.jogador.atacante.um{
+    left: 80px;
+    top: 120px; 
+}
+
+
+.jogador.atacante.dois{
+    left: 300px;
+    top: 120px; 
+}
+
+.jogador.atacante.tres{
+    left: 190px;
+    top: 50px; 
+}
+.cont img{
+    width: 400px;
+}
+.brasao{
+    width: 250px;
+}
